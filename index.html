@@ -35,7 +35,7 @@
                     <img class="w-6 h-6" src="assets/checkbox.png" alt="Checkbox">
                     <p class="text-2xl font-bold">23</p>
                 </div>
-                <div class="hidden lg:block bg-blue-100 rounded-full p-2">
+                <div id="rand-theme" class="hidden lg:block bg-blue-100 rounded-full p-2">
                     <img class="w-8 h-8" src="assets/theme-btn.png" alt="color">
                 </div>
             </div>
@@ -63,15 +63,15 @@
                             <img class="w-6 h-6" src="assets/calender.png" alt="Checkbox">
                         </div>
                         <div>
-                            <h2 class="font-normal">Wed,</h2>
-                            <div class="text-xl font-bold">jul-28-2025</div>
+                            <h2 id="day-name" class="font-normal">Wed,</h2>
+                            <div id="date-view" class="text-xl font-semibold">jul-28-2025</div>
                         </div>
                     </div>
                 </div>
                 <hr class=" border-gray-300 my-6">
                 <!-- second section -->
                 <div class="grid lg:grid-cols-3 gap-4">
-                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                    <div id="box" class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
                         <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">ShopEase</span>
                         <h2 class="text-xl font-medium py-4">Fix Mobile Button Issue</h2>
                         <p class="bg-white p-3 rounded-md text-gray-500">Fixing the mobile button issue requires debugging CSS and JavaScript properly.</p>
@@ -84,7 +84,7 @@
                             <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                    <div id="box" class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
                         <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">CloudSync</span>
                         <h2 class="text-xl font-medium py-4">Add Dark Mode</h2>
                         <p class="bg-white p-3 rounded-md text-gray-500">Enhance dark mode support for a consistent and sleek visual appeal.</p>
@@ -97,7 +97,7 @@
                             <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                    <div id="box" class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
                         <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">SwiftPay</span>
                         <h2 class="text-xl font-medium py-4">Optimize Home Page</h2>
                         <p class="bg-white p-3 rounded-md text-gray-500">Optimize the home page to enhance performance and loading speed.</p>
@@ -110,7 +110,7 @@
                             <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                    <div id="box" class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
                         <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">Meta</span>
                         <h2 class="text-xl font-medium py-4">Add New emoji</h2>
                         <p class="bg-white p-3 rounded-md text-gray-500">Add new emojis to make interactions more fun and engaging.</p>
@@ -123,7 +123,7 @@
                             <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                    <div id="box" class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
                         <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">Google LLC</span>
                         <h2 class="text-xl font-medium py-4">Integrate Open API</h2>
                         <p class="bg-white p-3 rounded-md text-gray-500">Integrate Open API for seamless data access and improved functionality.</p>
@@ -136,7 +136,7 @@
                             <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                    <div id="box" class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
                         <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">GlassDoor</span>
                         <h2 class="text-xl font-medium py-4">Improve Job Searching</h2>
                         <p class="bg-white p-3 rounded-md text-gray-500">Improve job searching features for better accuracy and user convenience.</p>
@@ -167,5 +167,6 @@
             </section>
         </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
