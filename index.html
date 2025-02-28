@@ -5,32 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
       @theme {
         --color-clifford: #da373d;
       }
     </style>
 </head>
-<body>
-    <main class="max-w-7xl mx-auto border border-slate-600">
-        <header class="flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="assets/logo.png" alt="Logo">
-                <h1>Dev Board</h1>
+<body class="bg-slate-100">
+    <main class="max-w-7xl mx-auto">
+        <!-- header section -->
+        <header class="flex justify-between items-center p-4 bg-white mt-4 rounded-lg">
+            <div class="lg:flex items-center gap-3">
+                <img class="w-10 h-10" src="assets/logo.png" alt="Logo">
+                <h1 class="hidden lg:block text-3xl text-blue-950">Dev<span class="font-bold">Board</span></h1>
             </div>
-            <div class="flex items-center gap-2">
-                <div class="flex justify-center gap-4">
-                    <img src="assets/checkbox.png" alt="Checkbox">
-                    <h2>23</h2>
+            <div class="flex items-center gap-8">
+                <div class="flex justify-center items-center gap-4  bg-blue-100 w-32 p-2 rounded-full">
+                    <img class="w-6 h-6" src="assets/checkbox.png" alt="Checkbox">
+                    <p class="text-2xl font-bold">23</p>
                 </div>
-                <img src="assets/theme-btn.png" alt="">
+                <div class="hidden lg:block bg-blue-100 rounded-full p-2">
+                    <img class="w-8 h-8" src="assets/theme-btn.png" alt="color">
+                </div>
             </div>
         </header>
-
-
+        <!-- main content -->
+        <div class="grid lg:grid-cols-12 gap-4 my-4">
+            <section class="lg:col-span-9  bg-white p-4 rounded-lg">
+                <!-- first section -->
+                <div class="grid grid-cols-1 lg:grid-cols-7 gap-5 justify-center items-center">
+                    <div class="lg:col-span-2 p-4 flex items-center gap-5 rounded-lg bg-blue-50">
+                        <div class="bg-white p-3 rounded-full">
+                            <img class="w-6 h-6" src="assets/checkbox.png" alt="Checkbox">
+                        </div>
+                        <div>
+                            <h2 class="font-normal">Task Assigned</h2>
+                            <div class="text-xl font-bold">06</div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-4 flex items-center gap-5 rounded-lg bg-blue-50 lg:bg-gradient-to-r from-blue-500 from-0% via-blue-400 via-50% to-blue-300 to-100%">
+                        <img class="w-12 h-12" src="assets/board.png" alt="calender">
+                        <h2 class="text-md text-base lg:text-blue-50 font-medium">Discover Something <br>New Today!</h2>
+                    </div>
+                    <div class="lg:col-span-2 p-4 flex items-center gap-5 rounded-lg bg-blue-50">
+                        <div class="bg-white p-3 rounded-full">
+                            <img class="w-6 h-6" src="assets/calender.png" alt="Checkbox">
+                        </div>
+                        <div>
+                            <h2 class="font-normal">Wed,</h2>
+                            <div class="text-xl font-bold">jul-28-2025</div>
+                        </div>
+                    </div>
+                </div>
+                <hr class=" border-gray-300 my-6">
+                <!-- second section -->
+                <div class="grid lg:grid-cols-3 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                        <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">ShopEase</span>
+                        <h2 class="text-xl font-medium py-4">Fix Mobile Button Issue</h2>
+                        <p class="bg-white p-3 rounded-md text-gray-500">Fixing the mobile button issue requires debugging CSS and JavaScript properly.</p>
+                        <hr class=" border-gray-300 my-3">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class=" text-gray-500">Dateline</p>
+                                <p class="font-medium  text-gray-700">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                        <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">CloudSync</span>
+                        <h2 class="text-xl font-medium py-4">Add Dark Mode</h2>
+                        <p class="bg-white p-3 rounded-md text-gray-500">Enhance dark mode support for a consistent and sleek visual appeal.</p>
+                        <hr class=" border-gray-300 my-3">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class=" text-gray-500">Dateline</p>
+                                <p class="font-medium  text-gray-700">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                        <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">SwiftPay</span>
+                        <h2 class="text-xl font-medium py-4">Optimize Home Page</h2>
+                        <p class="bg-white p-3 rounded-md text-gray-500">Optimize the home page to enhance performance and loading speed.</p>
+                        <hr class=" border-gray-300 my-3">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class=" text-gray-500">Dateline</p>
+                                <p class="font-medium  text-gray-700">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                        <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">Meta</span>
+                        <h2 class="text-xl font-medium py-4">Add New emoji</h2>
+                        <p class="bg-white p-3 rounded-md text-gray-500">Add new emojis to make interactions more fun and engaging.</p>
+                        <hr class=" border-gray-300 my-3">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class=" text-gray-500">Dateline</p>
+                                <p class="font-medium  text-gray-700">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                        <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">Google LLC</span>
+                        <h2 class="text-xl font-medium py-4">Integrate Open API</h2>
+                        <p class="bg-white p-3 rounded-md text-gray-500">Integrate Open API for seamless data access and improved functionality.</p>
+                        <hr class=" border-gray-300 my-3">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class=" text-gray-500">Dateline</p>
+                                <p class="font-medium  text-gray-700">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg drop-shadow-md">
+                        <span class="bg-white text-gray-600 font-medium px-5 py-1 rounded-md">GlassDoor</span>
+                        <h2 class="text-xl font-medium py-4">Improve Job Searching</h2>
+                        <p class="bg-white p-3 rounded-md text-gray-500">Improve job searching features for better accuracy and user convenience.</p>
+                        <hr class=" border-gray-300 my-3">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class=" text-gray-500">Dateline</p>
+                                <p class="font-medium  text-gray-700">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-500 text-white py-1 px-4 rounded-md hover:bg-blue-700 transition-all duration-300 ease-in-out">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lg:col-span-3  bg-white p-4 rounded-lg">
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <div class="flex justify-center items-center gap-4">
+                        <img src="assets/activity.png" alt="">
+                        <h1 class="text-lg">Activity Log</h1>
+                    </div>
+                    <button class="bg-blue-500 w-40 p-2 rounded-md text-white cursor-pointer transition-all duration-300 ease-in-out transform  hover:bg-blue-600">Clear History</button>
+                </div>
+                <hr class=" border-gray-300 my-6">
+                <div class="parent">
+                    <p class="bg-blue-50 p-3 my-2 rounded-md">To add a smooth transition effect when the button is hovered over</p>
+                    <p class="bg-blue-50 p-3 my-2 rounded-md">To add a smooth transition effect when the button is hovered over</p>
+                </div>
+            </section>
+        </div>
     </main>
-    
 </body>
 </html>
